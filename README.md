@@ -20,7 +20,7 @@ This project explores the feasibility of transmitting Ethernet data over free sp
 
 ## System Diagram
 
-_A system-level block diagram will be added soon._
+![Block Diagram](./docs/block-diagram.svg)
 
 ## Repository Structure
 
