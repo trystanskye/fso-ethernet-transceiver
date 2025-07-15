@@ -1,0 +1,140 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "4e39a6a0-ff84-4f80-be9c-1cfa3734e147")
+	(paper "A4")
+	(lib_symbols)
+	(global_label "VCC1.2"
+		(shape input)
+		(at 83.82 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "022a84bc-01b8-4634-9368-a5a55d8d24d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.1824 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3.3V"
+		(shape input)
+		(at 83.82 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0ac25399-788b-4e2c-b98a-653ca8c540c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 83.82 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "22991e51-3f32-4dd9-81a0-6684a362acb6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 76.9643 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AVDD33"
+		(shape input)
+		(at 83.82 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5e90917a-b55b-42b0-9dfe-9ffb79727712")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.6986 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "AGND"
+		(shape input)
+		(at 85.09 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "74b9ea9f-20a8-40c0-a57f-38aa900b5296")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.1457 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 85.09 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea0d19a9-459e-4d4b-b129-acdf3f272dd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.2343 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+)
