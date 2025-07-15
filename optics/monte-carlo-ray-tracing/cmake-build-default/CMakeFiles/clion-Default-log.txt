@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -DCMAKE_C_COMPILER=/usr/local/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER=/usr/local/opt/llvm/bin/clang++ -DCMAKE_C_COMPILER=/usr/local/opt/llvm/bin/clang -DCMAKE_CXX_COMPILER=/usr/local/opt/llvm/bin/clang++ -G Ninja -S /Users/trystankasprick/Documents/FSO/MonteCarloRayTracing -B /Users/trystankasprick/Documents/FSO/MonteCarloRayTracing/cmake-build-default
+-- OpenMP found!
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/trystankasprick/Documents/FSO/MonteCarloRayTracing/cmake-build-default
