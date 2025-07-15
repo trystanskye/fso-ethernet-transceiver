@@ -40,3 +40,9 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+
+# End of KiCad.gitignore
+
+# Ignore macOS system file
+.DS_Store
