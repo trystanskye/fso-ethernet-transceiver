@@ -3,7 +3,10 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "a666a16b-400c-41db-93fb-73cda2564726")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(date "2025-07-15")
+	)
 	(lib_symbols
 		(symbol "Device:D_Laser_1C2A"
 			(pin_names

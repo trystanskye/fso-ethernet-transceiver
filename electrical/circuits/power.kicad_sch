@@ -3,7 +3,10 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "4e39a6a0-ff84-4f80-be9c-1cfa3734e147")
-	(paper "A4")
+	(paper "A")
+	(title_block
+		(date "2025-07-15")
+	)
 	(lib_symbols)
 	(global_label "VCC1.2"
 		(shape input)
