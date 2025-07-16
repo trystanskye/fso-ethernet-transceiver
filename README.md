@@ -3,67 +3,57 @@ Prototyping a free-space optical transceiver with custom circuits, embedded syst
 
 ## Overview
 
-This project explores the feasibility of transmitting Ethernet data over free space using infrared laser beams. The system integrates custom analog and digital circuits, embedded logic, optical components, and mechanical alignment systems. Simulation and modeling are used to verify performance under real-world and worst-case conditions.
+This project implements a fully custom hardware system to transmit a 100BASE-TX Ethernet signal using free-space optical communication. The project spans multiple engineering domains, combining analog and digital circuit design, FPGA-based signal processing, computational modeling, and mechanical design to create a modular and reproducible prototype.
 
-## Key Components
-
-- **Custom Circuits**: Analog and digital design for laser driver, photodetector amplifier, and Ethernet signal interfacing
-- **Embedded Systems**: Verilog-based control and data timing for transmission and reception
-- **Optical Design**: Lens-based collimation and alignment system for point-to-point transmission
-- **Computational Modeling**:
-  - Monte Carlo ray tracing in C++ to simulate alignment tolerances
-  - FPGA logic simulation and timing validation in MATLAB/Simulink
-  - Solar irradiance modeling in R using real-world datasets for environmental interference analysis
-- **Mechanical Design**: SolidWorks-based prototyping of chassis, optical mounts, and aiming systems
-- **PCB Design**: Schematic capture and layout in KiCad with modular, debug-friendly structure
-- **Circuit Simulation**: LTSpice modeling of amplifier stability, bandwidth, and signal integrity
+---
 
 ## System Diagram
 
 ![Block Diagram](./docs/block-diagram.svg)
 
+---
+
 ## Repository Structure
 
-- /circuits/ - KiCad schematics and board files (partial, redacted)
-- /spice/ - LTSpice simulations of analog subcircuits
-- /optics/ - Ray tracing code and optical performance models
-- /r-analysis/ - R scripts and irradiance modeling datasets
-- /cad/ - SolidWorks assemblies and optical mount designs
-- /embedded/ - Verilog code and testbenches (in progress)
-- /docs/ - Diagrams, datasheets, engineering notes
+- electrical/ → Schematics, PCB layouts (KiCad), and SPICE simulations
+- embedded/ → Simulink timing models and FPGA implementation files
+- computational/ → Monte Carlo ray tracing, solar irradiance analysis (C++, R)
+- mechanical/ → SolidWorks chassis, mounts, and alignment systems
+- docs/ → System diagram, engineering notes, design references
 
+---
 
-## Simulation & Modeling
+## Subsystem Overview
 
-### Ray Tracing (C++)
+### Electrical
+- **Custom Circuit Design**: Analog photodetector amplifier, laser driver, and Ethernet PHY interface
+- **PCB Design**: KiCad-based schematic capture and modular PCB layout
+- **SPICE Simulation**: Stability, bandwidth, and signal integrity analysis in LTSpice
 
-A custom Monte Carlo ray tracing engine is used to estimate optical alignment sensitivity. It incorporates beam divergence, lens parameters, and receiver aperture geometry to evaluate coupling efficiency under misalignment.
+### Embedded
+- **Simulink Timing Model**: Simulates synchronization, clock domains, and interface behavior
+- **FPGA Implementation**: Handles serialization/deserialization (SERDES) and signal processing logic
 
-### FPGA Logic Simulation (MATLAB/Simulink)
+### Computational
+- **Monte Carlo Ray Tracing (C++)**: Simulates coupling efficiency under misalignment, beam divergence, and lens parameters
+- **Solar Irradiance Modeling (R)**: Analyzes spectral noise conditions using real-world datasets to guide photodetector filtering and signal margining
+- **Signal Modeling**: Frequency and time-domain simulations of critical analog subcircuits
 
-A MATLAB/Simulink model is used to simulate signal flow and timing behavior in the digital logic system prior to implementation in Verilog. This helps verify interface timing, synchronization, and control logic feasibility for the transceiver system.
+### Mechanical
+- **Optical Mounts**: Modeled supports for lenses, detectors, and laser modules
+- **Aiming Mechanism**: Mechanical alignment system for beam targeting
+- **Chassis Design**: 3D-modeled full system enclosure and support frame
 
-### Solar Spectrum Modeling (R)
+---
 
-Public irradiance datasets were cleaned and analyzed to extract realistic solar spectral conditions under both average and worst-case outdoor environments. This informs photodiode filtering and noise margin testing.
+## Planned Features
 
-### Circuit Simulation (LTSpice)
+- FPGA-based control logic for final transceiver prototype
+- 3D printed mechanical chassis and alignment mechanism
+- Finalized testing, waveforms, and photos (to be added to `/results`)
+- Assembly instructions and complete bill of materials (BOM)
 
-Transient and frequency-domain simulations are used to validate amplifier gain, phase stability, and overall signal chain performance before hardware prototyping.
-
-## Planned Additions
-
-- Verilog control logic for PHY interface and timing alignment
-- Expanded circuit validation in LTSpice with modeled parasitics
-- 3D printed chassis and optical alignment system
-- Ethernet signal decoding and testing setup
-- Assembly instructions and bill of materials
-
-## Licensing and Intellectual Property
-
-Some files (e.g., full schematics, PCB layouts, Verilog source code) are intentionally excluded from this public repository due to ongoing development and potential future patenting.
-
-Please contact me directly if you're interested in collaboration, discussion, or technical details.
+---
 
 ## Contact
 
