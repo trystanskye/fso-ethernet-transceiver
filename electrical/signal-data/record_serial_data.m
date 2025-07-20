@@ -36,10 +36,10 @@ while seconds(datetime('now') - t0) < duration_sec
 end
 
 % Save to .mat file
-t = (0:0.1:(length(data)-1)*0.1)';
-%data = uint8(data);
-ts = timeseries(data', t);
-save(fullfile(folder, filename), 'ts');
+%t = (0:0.1:(length(data)-1)*0.1)';
+data = uint8(data)';
+%ts = timeseries(data', t);
+save(fullfile(folder, filename), 'data');
 fprintf("Saved %d data points to %s.mat\n", length(data), filename);
 
 % Cleanup

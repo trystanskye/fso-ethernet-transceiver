@@ -1,6 +1,6 @@
 function record_all_trials(duration_sec)
     % Path to your data folder and .mat file
-    folder = "/Users/trystankasprick/Documents/FSO/signal-data";
+    folder = "/Users/trystankasprick/Documents/FSO/fso-ethernet-transceiver/electrical/signal-data";
     datafile = fullfile(folder, 'trial_data.mat');
 
     % Load existing data if it exists

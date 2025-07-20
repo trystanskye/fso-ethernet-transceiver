@@ -1,5 +1,5 @@
 const int analogPin = A1;
-const int speed = 100;  // Match this to the transmitter's blink speed (ms)
+const int speed = 20;  // Match this to the transmitter's blink speed (ms)
 
 
 void setup() {
