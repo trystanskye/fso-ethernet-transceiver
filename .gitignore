@@ -46,3 +46,8 @@ fp-info-cache
 
 # Ignore macOS system file
 .DS_Store
+
+# Ignore some signal processing testing files
+electrical/signal-data/calculate_ber.asv
+electrical/signal-data/decoder.asv
+electrical/signal-data/test.mat
