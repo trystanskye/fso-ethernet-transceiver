@@ -5,7 +5,8 @@
 	(uuid "004e0b39-0aab-4f8a-aa01-3967b9f60b4a")
 	(paper "A")
 	(title_block
-		(date "2025-07-15")
+		(title "Free Space Optical 10BASE-T Ethernet Transceiver Circuit")
+		(date "2025-07-22")
 	)
 	(lib_symbols
 		(symbol "ADC08200CIMT_NOPB:ADC08200CIMT_NOPB"
@@ -3187,7 +3188,7 @@
 		(uuid "8ad9eb76-5099-4c76-9b90-df1ae5e67bb1")
 	)
 	(global_label "ADC0"
-		(shape input)
+		(shape output)
 		(at 203.2 95.25 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3209,7 +3210,7 @@
 		)
 	)
 	(global_label "ADC3"
-		(shape input)
+		(shape output)
 		(at 203.2 102.87 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3231,7 +3232,7 @@
 		)
 	)
 	(global_label "ADC5"
-		(shape input)
+		(shape output)
 		(at 203.2 113.03 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3253,7 +3254,7 @@
 		)
 	)
 	(global_label "ADC1"
-		(shape input)
+		(shape output)
 		(at 203.2 97.79 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3297,7 +3298,7 @@
 		)
 	)
 	(global_label "ADC7"
-		(shape input)
+		(shape output)
 		(at 203.2 118.11 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3319,7 +3320,7 @@
 		)
 	)
 	(global_label "ADC2"
-		(shape input)
+		(shape output)
 		(at 203.2 100.33 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3341,7 +3342,7 @@
 		)
 	)
 	(global_label "AGND"
-		(shape input)
+		(shape output)
 		(at 140.97 111.76 270)
 		(fields_autoplaced yes)
 		(effects
@@ -3363,7 +3364,7 @@
 		)
 	)
 	(global_label "ADC4"
-		(shape input)
+		(shape output)
 		(at 203.2 110.49 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3385,7 +3386,7 @@
 		)
 	)
 	(global_label "ADC6"
-		(shape input)
+		(shape output)
 		(at 203.2 115.57 0)
 		(fields_autoplaced yes)
 		(effects

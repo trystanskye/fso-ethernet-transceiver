@@ -5,10 +5,9 @@
 	(uuid "5f57f40d-93c0-4665-857b-1def44fe2c31")
 	(paper "A")
 	(title_block
-		(title "Free Space Optical 100BASE-TX Ethernet Transceiver Circuit")
-		(date "2025-07-15")
+		(title "Free Space Optical 10BASE-T Ethernet Transceiver Circuit")
+		(date "2025-07-22")
 		(rev "1")
-		(company "Trystan Skye")
 	)
 	(lib_symbols
 		(symbol "LCMXO3LF-1300E-5UWG36ITR:LCMXO3LF-1300E-5UWG36ITR"
@@ -1121,28 +1120,6 @@
 		)
 		(uuid "ee1ec054-8fb5-4718-b29a-e08b3956d4b9")
 	)
-	(global_label "PHYTX1"
-		(shape input)
-		(at 109.22 83.82 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "08ee9157-ed3f-4aac-8c80-6876fdf90b99")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.22 73.7591 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ADC2"
 		(shape input)
 		(at 111.76 116.84 270)
@@ -1166,7 +1143,7 @@
 		)
 	)
 	(global_label "PHYTXEN"
-		(shape input)
+		(shape output)
 		(at 111.76 83.82 90)
 		(fields_autoplaced yes)
 		(effects
@@ -1187,9 +1164,9 @@
 			)
 		)
 	)
-	(global_label "PHYRX1"
+	(global_label "PHYRXCLK"
 		(shape input)
-		(at 121.92 83.82 90)
+		(at 124.46 83.82 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1197,9 +1174,9 @@
 			)
 			(justify left)
 		)
-		(uuid "43e3ccec-6892-4682-815c-bd31f55a98db")
+		(uuid "43d5d2f4-ee28-44fd-9fea-7d8a60732e4c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.92 73.4567 90)
+			(at 124.46 71.0981 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1298,7 +1275,7 @@
 		)
 	)
 	(global_label "VCC1.2"
-		(shape input)
+		(shape output)
 		(at 114.3 83.82 90)
 		(fields_autoplaced yes)
 		(effects
@@ -1341,28 +1318,6 @@
 			)
 		)
 	)
-	(global_label "PHYRXDV"
-		(shape input)
-		(at 124.46 83.82 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8ce12b2a-77e4-480f-b8ea-f3304d8dc735")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.46 72.3076 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PHYRX0"
 		(shape input)
 		(at 119.38 83.82 90)
@@ -1385,7 +1340,7 @@
 			)
 		)
 	)
-	(global_label "PHYCLK"
+	(global_label "PHYTXCLK"
 		(shape input)
 		(at 132.08 83.82 90)
 		(fields_autoplaced yes)
@@ -1397,29 +1352,7 @@
 		)
 		(uuid "c46d2d60-2fe9-41c5-9b88-6ba4c053e61d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.08 73.5776 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PHYCRS"
-		(shape input)
-		(at 127 83.82 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c791ac06-9385-4f9b-b606-785547b77780")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127 73.3962 90)
+			(at 132.08 71.4005 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,7 +1451,7 @@
 		)
 	)
 	(global_label "Laser Driver"
-		(shape input)
+		(shape output)
 		(at 129.54 83.82 90)
 		(fields_autoplaced yes)
 		(effects
@@ -1540,7 +1473,7 @@
 		)
 	)
 	(global_label "PHYTX0"
-		(shape input)
+		(shape output)
 		(at 106.68 83.82 90)
 		(fields_autoplaced yes)
 		(effects
