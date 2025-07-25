@@ -32,9 +32,9 @@ end
 
 num_error = binary_signal(binary_signal ~= truth');
 
-%ber = length(num_error) / length(binary_signal);
+ber = length(num_error) / length(binary_signal);
 
-ber = [binary_signal truth']; % for testing
+%ber = [binary_signal truth']; % for testing
 
 end
 
