@@ -1,14 +1,22 @@
 const int analogPin = A1;
-const int speed = 20;  // Match this to the transmitter's blink speed (ms)
 
+const float speed_ms = 0.2;  // Sampling rate in milliseconds
+const unsigned long speed_us = speed_ms * 1000;  // Converted to microseconds
+
+unsigned long lastSampleTime = 0;
 
 void setup() {
-  Serial.begin(115200);  // High baud rate for fast serial transfer
-  //delay(2000);
+  Serial.begin(115200);  // High baud rate for fast data transfer
+  lastSampleTime = micros();  // Initialize the timing reference
 }
 
 void loop() {
-  int value = analogRead(analogPin);  // Read from A1
-  Serial.println(value);
-  delay(speed);
+  unsigned long currentTime = micros();
+
+  if (currentTime - lastSampleTime >= speed_us) {
+    int value = analogRead(analogPin);
+    Serial.println(value);
+
+    lastSampleTime += speed_us;  // Keep stable intervals
+  }
 }
